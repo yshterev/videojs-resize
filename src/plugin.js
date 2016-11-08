@@ -17,13 +17,11 @@ class Resize {
     this.widths = [];
 
     const iframe = document.createElement('iframe');
-    const html = `
-    <script>
-      window.addEventListener("resize", function() {
-        parent.postMessage("resize:' + this.player.id() + '", "*");
-      });
-    </script>
-    `;
+    const html = '<script>' +
+      'window.addEventListener("resize", function() {' +
+        'parent.postMessage("resize:' + this.player.id() + '", "*");' +
+      '});' +
+    '</script>';
 
     iframe.id = 'sizeframe';
     this.player.el().appendChild(iframe);
@@ -60,7 +58,7 @@ class Resize {
         let width = this.widths[i];
 
         if (playerWidth < width) {
-          this.player.addClass();
+          this.player.addClass(this.options.breakpoints[width]);
         }
       }
     }
@@ -81,7 +79,7 @@ class Resize {
  */
 const resize = function(options) {
   this.ready(() => {
-    let resize = new Resize(this, videojs.mergeOptions(defaults, options));
+    const resizeInstance = new Resize(this, videojs.mergeOptions(defaults, options));
   });
 };
 
