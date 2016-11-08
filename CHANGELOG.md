@@ -1,8 +1,8 @@
 CHANGELOG
 =========
 
-## HEAD (Unreleased)
-* 0.1
+## HEAD
+* 1.0.0
 
 --------------------
 
