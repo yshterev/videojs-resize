@@ -17,7 +17,9 @@ bower install  --save videojs-resize
 ```
 
 ## Options
-You can pass breakpoints as options to the plugin. These are the defaults. The class is added if `player width < breakpoint key`.
+You can pass breakpoints as options to the plugin. These are the defaults.
+
+The class is added if `player width < breakpoint key`.
 
 ```
 player.resize({
@@ -74,10 +76,3 @@ require(['video.js', 'videojs-resize'], function(videojs) {
   player.resize();
 });
 ```
-
-## License
-
-MIT. Copyright (c) Yanko Shterev &lt;yanko@streamingvideoprovider.com&gt;
-
-
-[videojs]: http://videojs.com/
