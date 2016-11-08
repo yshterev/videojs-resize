@@ -15,13 +15,17 @@ class Resize {
     this.options = options;
     this.classes = [];
     this.widths = [];
+  }
 
+  setup() {
     const iframe = document.createElement('iframe');
-    const html = '<script>' +
-      'window.addEventListener("resize", function() {' +
-        'parent.postMessage("resize:' + this.player.id() + '", "*");' +
-      '});' +
-    '</script>';
+    const html = `
+    <script>
+      window.addEventListener("resize", function() {
+        parent.postMessage("resize:${this.player.id()}", "*");
+      });
+    </script>
+    `;
 
     iframe.id = 'sizeframe';
     this.player.el().appendChild(iframe);
@@ -80,6 +84,8 @@ class Resize {
 const resize = function(options) {
   this.ready(() => {
     const resizeInstance = new Resize(this, videojs.mergeOptions(defaults, options));
+
+    resizeInstance.setup();
   });
 };
 
