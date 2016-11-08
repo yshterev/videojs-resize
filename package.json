@@ -1,6 +1,6 @@
 {
   "name": "videojs-resize",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Detects videojs player resize and adds/removes  classes",
   "main": "es5/plugin.js",
   "generator-videojs-plugin": {
