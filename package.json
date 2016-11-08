@@ -40,6 +40,13 @@
     "videojs-plugin"
   ],
   "author": "Yanko Shterev <yanko@streamingvideoprovider.com>",
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/yshterev/videojs-size.git"
+	},
+	"bugs": {
+		"url": "https://github.com/yshterev/videojs-size/issues"
+	},
   "license": "MIT",
   "browserify": {
     "transform": [
