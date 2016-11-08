@@ -1,0 +1,14 @@
+{
+  "name": "videojs-resize",
+  "author": "Yanko Shterev &lt;yanko@streamingvideoprovider.com&gt;",
+  "license": "MIT",
+  "main": [
+    "dist/videojs-resize.css",
+    "dist/videojs-resize.min.js"
+  ],
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ]
+}
+
