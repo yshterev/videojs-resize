@@ -42,10 +42,10 @@
   "author": "Yanko Shterev <yanko@streamingvideoprovider.com>",
   "repository": {
 		"type": "git",
-		"url": "git://github.com/yshterev/videojs-size.git"
+		"url": "git://github.com/yshterev/videojs-resize.git"
 	},
 	"bugs": {
-		"url": "https://github.com/yshterev/videojs-size/issues"
+		"url": "https://github.com/yshterev/videojs-resize/issues"
 	},
   "license": "MIT",
   "browserify": {
